@@ -15,8 +15,8 @@ class Destination(models.Model):
 		verbose_name = "Destination"
 		verbose_name_plural = "Destinations"
 
-		def __str__(self):
-			return self.destination_name
+	def __str__(self):
+		return self.destination_name
 
 class Hotel(models.Model):
 	hotel_name = models.CharField(_('Hotel'), max_length=255, blank=False, null=False, unique=True)
@@ -30,5 +30,8 @@ class Hotel(models.Model):
 		verbose_name = "Hotel"
 		verbose_name_plural = "Hotels"
 
-		def __str__(self):
-			return self.hotel_name
+	def __str__(self):
+		return self.hotel_name
+
+	def __unicode__(self):
+		return self.hotel_name
