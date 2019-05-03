@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #CUSTOM APPS
     'accounts',
+    'destination',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
